@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JagatNusantara - Katalog Pariwisata</title>
+    <link rel="stylesheet" href="pariwisata.css">
+    <!-- Font Awesome untuk ikon (opsional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="wrapper nav-container">
+            <div class="logo">
+                <a href="#">JagatNusantara</a>
+            </div>
+            <nav class="nav-links">
+                <a href="#hero">Beranda</a>
+                <a href="#destinasi">Destinasi</a>
+                <a href="#booking">Pesan Tiket</a>
+                <a href="#testimoni">Ulasan</a>
+                <a href="#contact">Hubungi Kami</a>
+            </nav>
+            <div class="nav-btn">
+                <a href="#booking" class="btn-orange">Pesan Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="wrapper hero-container">
+            <div class="hero-text">
+                <h1>Jelajahi Keindahan Wisata Indonesia</h1>
+                <p>Nikmati pesona alam dan budaya terbaik dari Sabang sampai Merauke. Temukan pengalaman liburan impian Anda bersama paket perjalanan tepercaya kami.</p>
+                <a href="#destinasi" class="btn-orange">Jelajahi Wisata</a>
+            </div>
+            <div class="hero-image">
+                <img src="c:\Libraries\Downloads\Indonesia_main-e1500438787976.jpg" alt="Wisata Indonesia">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION DESTINASI (PILIHAN MENU) -->
+    <section id="destinasi" class="section-destinasi">
+        <div class="wrapper">
+            <h2 class="section-title">Pilihan Destinasi Wisata</h2>
+            <div class="card-grid">
+                
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="c:\Libraries\Downloads\images.jpg borubudur.jpg" alt="Bali">
+                    <div class="card-body">
+                        <h3>Candi Borobudur</h3>
+                        <p>Nikmati kemegahan candi Buddha terbesar di dunia dengan latar belakang pemandangan matahari terbit yang memukau.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="c:\Libraries\Downloads\images.jpg raja a.jpg" alt="Raja Ampat">
+                    <div class="card-body">
+                        <h3>Raja Ampat</h3>
+                        <p>Surga bawah laut terindah dengan gugusan pulau karang ikonik dan keanekaragaman hayati laut yang luar biasa.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="c:\Libraries\Downloads\7f301e6f6c1d724b7ad0220aa00af268.jpeg bromo.jpeg" alt="Gunung Bromo">
+                    <div class="card-body">
+                        <h3>Gunung Bromo</h3>
+                        <p>Saksikan pemandangan kawah aktif, lautan pasir luas, dan keindahan golden sunrise di kawasan Jawa Timur.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="c:\Libraries\Downloads\images.jpg la.jpg" alt="Labuan Bajo">
+                    <div class="card-body">
+                        <h3>Labuan Bajo</h3>
+                        <p>Petualangan seru melihat Komodo, menjelajahi Pulau Padar, serta menikmati pantai berpasir merah muda.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="c:\Libraries\Downloads\images.jpg toba.jpg" alt="Danau Toba">
+                    <div class="card-body">
+                        <h3>Danau Toba</h3>
+                        <p>Danau vulkanik raksasa dengan Pulau Samosir di tengahnya yang kaya akan tradisi dan kebudayaan suku Batak.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                    <img src="c:\Libraries\Downloads\images.jpg toraja.jpg" alt="Toraja">
+                    <div class="card-body">
+                        <h3>Tana Toraja</h3>
+                        <p>Destinasi wisata budaya unik di Sulawesi Selatan yang menyajikan arsitektur tradisional Tongkonan dan adat khas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TUGAS 1: SECTION BOOK A TABLE / PESAN TIKET TUR -->
+    <section id="booking" class="section-booking">
+        <div class="wrapper">
+            <h2 class="section-title cursive">Book A Tour / Ticket</h2>
+            <div class="booking-container">
+                <!-- Form Pemesanan -->
+                <form class="booking-form">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="tel" placeholder="Nomor Telepon / WhatsApp" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <select required>
+                        <option value="" disabled selected>Pilih Destinasi / Paket Tur</option>
+                        <option value="borobudur">Candi Borobudur</option>
+                        <option value="raja-ampat">Raja Ampat</option>
+                        <option value="bromo">Gunung Bromo</option>
+                        <option value="labuan-bajo">Labuan Bajo</option>
+                    </select>
+                    <input type="number" placeholder="Jumlah Peserta (Orang)" min="1" required>
+                    <input type="date" required>
+                    <button type="submit" class="btn-orange btn-full">Pesan Sekarang</button>
+                </form>
+                
+                <!-- Peta Lokasi / Map -->
+                <div class="booking-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.411130635!2d112.36881454592078!3d-7.472613146313809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780d1956c2d1b7%3A0x3027a76e352b270!2sMojokerto%2C%20Mojokerto%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUGAS 2: SECTION KOMENTAR REKANAN / TESTIMONI -->
+    <section id="testimoni" class="section-testimoni">
+        <div class="wrapper">
+            <h2 class="section-title cursive">What Says Our Travelers</h2>
+            <div class="testimoni-grid">
+                
+                <div class="testimoni-card">
+                    <p>"Pengalaman liburan ke Labuan Bajo bersama JagatNusantara sangat berkesan! Pelayanan ramah, pemandu tur profesional, dan fasilitas sesuai ekspektasi."</p>
+                    <div class="user-info">
+                        <h4>Moana Michell</h4>
+                        <span>Wisatawan Domestik</span>
+                    </div>
+                </div>
+
+                <div class="testimoni-card">
+                    <p>"Paket wisata Bromo sunrise benar-benar memuaskan. Penjemputan tepat waktu dan dokumentasinya keren banget. Sangat direkomendasikan!"</p>
+                    <div class="user-info">
+                        <h4>Mike Hansel</h4>
+                        <span>Travel Blogger</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="wrapper footer-container">
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Location in Indonesia</p>
+                <p>WA: 085707483439</p>
+                <p>Email: beat/bergaya87@gmail.com</p>
+            </div>
+            <div class="footer-col footer-center">
+                <h2>JagatNusantara</h2>
+                <p>Pariwisata & Tur Nusantara</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <p>Everyday: 08:00 AM - 20:00 PM</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 All Rights Reserved By DEVAN APRILIANSYAH</p>
+        </div>
+    </footer>
+
+</body>
+</html>
